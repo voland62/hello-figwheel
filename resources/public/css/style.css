@@ -1,0 +1,16 @@
+/* some style */
+.label {
+    position: absolute;
+    padding-left: 3px;
+    padding-right: 3px;
+    top: -9px;
+    left: 9px;
+    background-color: #ffffff;
+}
+
+.module {
+    position: relative;
+    margin: 5px;
+    display: inline-block;
+}
+
