@@ -1,4 +1,4 @@
-(ns hello-figwheel.core-async-based-eyes
+(ns hello-figwheel.core-async-based-eyes-3
   (:require-macros [cljs.core.async.macros :refer [go]])
   (:require [cljs.core.async :as async
              :refer [>! <! put! chan alts! close!]]
@@ -79,7 +79,7 @@
   (def element (.getElementById js/document id))
   (def shift [(.-left (common/element-rect id))
               (.-top (common/element-rect id))])
-  (def model-chan (chan 1 (create-model-tranceducer [100 50] shift)))
+  (def model-chan (chan 1 (create-model-tranceducer [100 70] shift)))
   (events->chan element EventType.MOUSEMOVE model-chan)
   (def canvas-renderer (canvas-renderer/create-canvas-renderer id))
   (do-stuff model-chan canvas-renderer))

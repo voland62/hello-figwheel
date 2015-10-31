@@ -20,13 +20,12 @@
   (modul-1/teardown)
   (modul-2/teardown))
 
-
 (teardown)
 (setup)
 
-#_(defn on-js-reload []
+(defn on-js-reload []
   ;; optionally touch your app-state to force rerendering depending on
   ;; your application
-  (println "Hello Andrew!!!!")
+  (println "Hello Andrew from hello-figwheel.core")
   (teardown)
   (setup))

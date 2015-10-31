@@ -10,7 +10,12 @@
 ;; ------------------------------------------
 (def aaa 23)
 
-;; --- infrastructure --------------------------------------------
-
+;; --- we need this to first setup. this is called only once on startup.
+;; other refresh - from on-js-reload. this ns is not reloading on every other ns change!
 (m2/teardown)
 (m2/setup "canvas-2")
+
+(defn on-js-reload []
+  (println "Hello Andrew from hello-figwheel.module-2")
+  (m2/teardown)
+  (m2/setup "canvas-2"))
