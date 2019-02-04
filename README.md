@@ -32,7 +32,11 @@ To create a production build run:
 And open your browser in `resources/public/index.html`. You will not
 get live reloading, nor a REPL. 
 
-<img src="bouncing-ball.svg" />
+<div>
+<svg>
+    <circle cx="40" cy="40" r="24" style="stroke:#006600; fill:#00cc00"/>
+    </svg>
+</div>
 
 ## License
 
