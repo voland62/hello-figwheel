@@ -34,31 +34,6 @@ get live reloading, nor a REPL.
 
 <svg width="250" height="400">
     <defs>
-        <style>
-            :root {
-                    --bounce-duration: 0.5s;
-            }
-            .bounce {
-                animation: bounce var(--bounce-duration) ease-in infinite alternate;
-            }
-            @keyframes bounce
-            {
-               from {transform: translateY(-200px);}
-               to   {transform: translateY(0px);}
-            }
-            .bounce-shadow {
-                animation: bounce-shadow var(--bounce-duration) ease-in infinite alternate;
-            }
-            @keyframes bounce-shadow
-            {
-               from {transform: translate(100px,-50px);
-                     opacity: 0.3;
-                     }
-               to   {transform: translate(0px,0px);
-                     opacity: 0.5;
-                    }
-            }
-        </style>
         <filter id="blur">
             <feGaussianBlur stdDeviation="3"/>
         </filter>
