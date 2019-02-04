@@ -32,7 +32,9 @@ To create a production build run:
 And open your browser in `resources/public/index.html`. You will not
 get live reloading, nor a REPL. 
 
-<img src="bouncing-ball.svg" />
+<iframe data="animated-stoplight-scripted.svg"
+ type="image/svg+xml" >
+</iframe>
 
 ## License
 
